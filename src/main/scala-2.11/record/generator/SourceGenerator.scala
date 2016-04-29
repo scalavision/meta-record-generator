@@ -4,9 +4,6 @@ import scala.meta.Term.Param
 import scala.meta.Type.Arg
 import scala.meta.{Term, Type}
 
-/**
-  * Created by tomsorlie on 4/9/16.
-  */
 object SourceGenerator {
 
   sealed trait MetaParam {

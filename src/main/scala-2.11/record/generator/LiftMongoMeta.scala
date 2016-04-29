@@ -11,5 +11,4 @@ object LiftMongoMeta {
   trait BsonMetaRecord
   trait MongoRecord
 
-
 }
