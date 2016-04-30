@@ -13,17 +13,20 @@ trait MongoRecordMetaGen {
 
 object DomainModel {
 
-  case class Student(
+  case class Applicant(
+    fnr:Fnr,
     firstName:String,
     middleNames: List[String],
     lastName:String,
     born:Date)
+
+  case class Fnr(fnr:String)
 
 }
 
 object MongoRecordMeta extends MongoRecordMetaGen {
   import DomainModel._
 
-  MRec[Student,StringPk]
+  MRec[Applicant,UUIDPk]
 
 }
